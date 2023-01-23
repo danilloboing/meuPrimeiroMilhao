@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Meu Primeiro Milhão</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">	
+	</head>
+    <body>
+        <header>
+            <img class="banner" src="/assets/img/banner.jpg" alt="Banner de notas de dólar">
+            <h1>Quer saber quanto tempo irá levar para conseguir seu primerio milhão?</h1>
+            <nav id="">Calcular</nav>
+        </header>
+
+        <section class="introdução">
+            <h2>Meu Primeiro Milhão</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam vulputate, nec scelerisque</p>
+            <div class="imagem_introdução">
+                <img src="assets/img/money.jpg" alt="Plantação de dinheiro" width="300px">
+            </div>
+        </section>
+
+        <section>
+            <h3>Escolha sua forma de calcular </h3>
+            <fieldset>
+                <label for="radio-prazo">
+                    <input type="radio" name="prazo" value="radio-prazo" id="radio-prazo">Prazo
+                </label>
+                <label for="radio-mensal">
+                    <input type="radio" name="mensal" value="radio-mensal" id="radio-mensal" checked>Investimento Mensal
+                </label>
+            </fieldset>
+        </section>
+
+        <form>
+            <p class="form">MEU PRIMEIRO MILHÃO</p>
+            <div class="conteiner_aporte">
+                <label for="aporteMensal">APORTE MENSAL:</label>
+                <div>
+                    <div class="leftBox">R$</div>
+                    <input id="aporteMensal"  type="text" value="" placeholder="0,00">
+                </div>
+            </div>
+            <div class="conteiner_juros">
+                <label for="jurosMensal">JUROS MENSAL:</label>
+                <div>
+                    <div class="leftBox">%</div>
+                    <input id="jurosMensal" type="text" placeholder="1%">
+                </div>
+            </div>
+            <label for="resultado">RESULTADO:</label><br>
+            <input id="resultado" type="number"><br>
+            <button id="calcular" type="button">CALCULAR</button><br>
+            <button id="reset" type="reset">LIMPAR</button>
+        </form>
+
+
+
+        <script src="/script.js"></script>
+    </body>
