@@ -1,39 +1,69 @@
-<!DOCTYPE html>
-	<html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Meu Primeiro Milhão</title>
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">	
-	</head>
-    <body>
-        <header>
-            <img class="banner" src="/assets/img/banner.jpg" alt="Banner de notas de dólar">
-            <h1>Quer saber quanto tempo irá levar para conseguir seu primerio milhão?</h1>
-            <nav id="">Calcular</nav>
-        </header>
+<!doctype html>
+<html lang="pt-br">
 
-        <section class="introdução">
-            <h2>Meu Primeiro Milhão</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam vulputate, nec scelerisque</p>
-            <div class="imagem_introdução">
-                <img src="assets/img/money.jpg" alt="Plantação de dinheiro" width="300px">
-            </div>
-        </section>
+<head>
+  <title>Meu Primeiro Milhão</title>
 
-        <section>
-            <h3>Escolha sua forma de calcular </h3>
-            <fieldset>
-                <label for="radio-prazo">
-                    <input type="radio" name="prazo" value="radio-prazo" id="radio-prazo">Prazo
-                </label>
-                <label for="radio-mensal">
-                    <input type="radio" name="mensal" value="radio-mensal" id="radio-mensal" checked>Investimento Mensal
-                </label>
-            </fieldset>
-        </section>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Cover</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+  <main>
+
+    <h1>Cover your page.</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+    </p>
+    <div class="container col-12">
+      <div class="form-floating mb-3 col-6 m-auto">
+        <input
+          type="number"
+          class="form-control" name="formId1" id="formId1" placeholder="">
+        <label for="formId1">Seu aporte mensal:</label>
+      </div>
+      <div class="form-floating mb-3 col-6 m-auto">
+        <input type="number" class="form-control">
+        <label for="">Juros anual:</label>
+      </div>
+
+    </div>
+    
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
+       <!--
         <form>
             <p class="form">MEU PRIMEIRO MILHÃO</p>
             <div class="conteiner_aporte">
@@ -56,7 +86,5 @@
             <button id="reset" type="reset">LIMPAR</button>
         </form>
 
-
-
-        <script src="/script.js"></script>
-    </body>
+        
+    
