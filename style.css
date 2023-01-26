@@ -1,7 +1,7 @@
 .background-site{
     background-color: #0e0019;
 }
-header{
+header, .navbar{
     background-color: #0e0019;
 }
 nav {
@@ -10,6 +10,7 @@ nav {
 
 .titulo {
     font-family: inter;
+    width: 40%;
 }
 .botao-navbar {
     border-color: #602ac4;
