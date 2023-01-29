@@ -39,3 +39,9 @@ nav {
 .container-calculo{
     margin: 8em auto;
 }
+
+@media screen and (max-width: 500px) {
+    .lead {
+        font-size: 15px;
+    }
+}
