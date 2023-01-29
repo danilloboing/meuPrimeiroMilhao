@@ -33,11 +33,32 @@ nav {
     color: aliceblue;
 }
 
+.input-group {
+    width: auto; 
+    margin-top: 1rem;
+    padding-left: 15px;
+}
+
+.percent {
+    padding-left: 15px;
+}
+
+.input-group-text{
+    width: 45px;
+    text-align: center;
+    color: #602ac4;
+    background-color: beige;
+}
 .botao-calcular {
     background-color: #602ac4;
 }
 .container-calculo{
     margin: 8em auto;
+}
+
+#resultado {
+    padding: 20px;
+    color: white;
 }
 
 @media screen and (max-width: 500px) {
