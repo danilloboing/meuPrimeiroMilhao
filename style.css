@@ -19,11 +19,14 @@ nav {
 
 .navbar-collapse {
     flex-grow: 0;
+    transition: 0.7s;
+    margin: 1em 2em 0 0;
 }
 .navegacao a {
     color: #7931ff;
     font-family: inter;
     font-size: 1.3em;
+    text-align: end;
 }
 
 .nav-link:hover {
