@@ -35,12 +35,21 @@ nav {
 
 .input-group {
     width: auto; 
-    margin-top: 1rem;
+    margin: 1rem;
     padding-left: 15px;
+
 }
 
 .percent {
     padding-left: 15px;
+}
+
+.form-control{
+    width: 100%;
+}
+
+.form-control:focus{
+    box-shadow: none;
 }
 
 .input-group-text{
@@ -49,16 +58,22 @@ nav {
     color: #602ac4;
     background-color: beige;
 }
+
 .botao-calcular {
     background-color: #602ac4;
 }
+
+button {
+    width: 109px;
+}
+
 .container-calculo{
     margin: 8em auto;
 }
 
 #resultado {
     padding: 20px;
-    color: white;
+    color: beige;
 }
 
 @media screen and (max-width: 500px) {

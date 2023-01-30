@@ -54,9 +54,19 @@
       <p class="lead col-10 m-auto">Sabia que se você se organizar financeiramente, é possível chegar no seu primeiro UM MILHÃO DE REAIS? 
         Comece seu planejamento calculando em quanto tempo você alcançará seu objetivo preenchendo o formulário abaixo:</p>
         <br>
-      <div class="container-md w-80 d-flex justify-content-around flex-wrap">
-        <form class="form-calculo">
-          <div class="input-group mt-3">  
+      <div class="container-sm w-80">
+        <form class="form-calculo d-flex justify-content-around flex-wrap">
+          <div class="input-group box-form mt-3">  
+            <span class="input-group-text">R$</span>
+            <div class="form-floating text-dark">
+              <input
+              type="number"
+              class="form-control" name="formId3" id="valorInicial" placeholder="">
+              <label for="aporteMensal">Seu investimento inicial:</label>
+            </div>
+          </div>
+
+          <div class="input-group box-form mt-3">  
             <span class="input-group-text">R$</span>
             <div class="form-floating text-dark">
               <input
@@ -66,26 +76,32 @@
             </div>
           </div>
 
-          <div class="input-group mt-3">  
+          <div class="input-group box-form mt-3">  
             <span class="input-group-text percent">%</span>
             <div class="form-floating text-dark">
               <input 
               type="number" 
-              class="form-control" id="jurosAnual" placeholder="">
+              class="form-control" name="formId2" id="jurosAnual" placeholder="">
               <label for="jurosAnual">Juros anual:</label>
             </div>
           </div>
         </form>
       </div>
-      
       <div id="resultado"></div>
+      <div id="alerta-calculo"></div>
       <button 
       class="btn btn-lg btn-secondary fw-bold border-black text-light botao-calcular" 
       id="calcular" 
-      type="submit"
-      onclick="">
+      type="submit">
         Calcular
       </button>
+      <button 
+      type="reset" 
+      class=" btn btn-lg btn-secondary fw-bold border-black text-light botao-reset">
+      Reset
+    </button>
+      
+
 
 
 
