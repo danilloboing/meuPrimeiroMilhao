@@ -1,4 +1,4 @@
-var result = 0;
+var balanço =parseFloat(document.querySelector("#valorInicial").value) || 0;
 var months = 0;
 var botaoCalcular = document.querySelector("#calcular");
 botaoCalcular.addEventListener("click", function(event) {
@@ -15,13 +15,13 @@ botaoCalcular.addEventListener("click", function(event) {
       alert('O juros deve ser um número maior que zero');
       return;
     }
-    while (result < 1000000) {
-          result = (result + aporteMensal) * (((jurosAnual / 100 ) / 12) + 1);
+    while (balanço < 1000000) {
+          balanço = (balanço + aporteMensal) * (((jurosAnual / 100 ) / 12) + 1);
           months++;
         }
         console.log (months)
         console.log (jurosAnual)
-        console.log (result)
+        console.log (balanço)
 
         document.getElementById("resultado").innerHTML = "Considerando seu aporte mensal e juros anual, você alcançará seu primeiro milhão em aproximadamente " + months + " meses."
         document.getElementById("alerta-calculo").innerHTML = ""

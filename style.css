@@ -59,12 +59,20 @@ nav {
     background-color: beige;
 }
 
+#calcular, #reset {
+    width: 109px;
+}
+
 .botao-calcular {
     background-color: #602ac4;
 }
+.botao-calcular:hover{
+    background-color: #501caf;
+}
 
-button {
-    width: 109px;
+.botao-reset {
+    background-color: beige;
+    color: #602ac4;
 }
 
 .container-calculo{
@@ -74,6 +82,25 @@ button {
 #resultado {
     padding: 20px;
     color: beige;
+}
+
+.titulo-investidores {
+    margin: 2em auto;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+}
+
+.conteudo-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featurette-heading {
+    font-family: inter;
 }
 
 @media screen and (max-width: 500px) {

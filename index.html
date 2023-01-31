@@ -54,67 +54,117 @@
       <p class="lead col-10 m-auto">Sabia que se você se organizar financeiramente, é possível chegar no seu primeiro UM MILHÃO DE REAIS? 
         Comece seu planejamento calculando em quanto tempo você alcançará seu objetivo preenchendo o formulário abaixo:</p>
         <br>
+        
       <div class="container-sm w-80">
-        <form class="form-calculo d-flex justify-content-around flex-wrap">
-          <div class="input-group box-form mt-3">  
-            <span class="input-group-text">R$</span>
-            <div class="form-floating text-dark">
-              <input
-              type="number"
-              class="form-control" name="formId3" id="valorInicial" placeholder="">
-              <label for="aporteMensal">Seu investimento inicial:</label>
+        <form id="form-calculo">
+          <div class="d-flex justify-content-around flex-wrap">
+            <div class="input-group box-form mt-3">  
+              <span class="input-group-text">R$</span>
+              <div class="form-floating text-dark">
+                <input
+                type="number"
+                class="form-control" name="formId3" id="valorInicial" placeholder="">
+                <label for="valorInicial">Seu investimento inicial:</label>
+              </div>
             </div>
-          </div>
 
-          <div class="input-group box-form mt-3">  
-            <span class="input-group-text">R$</span>
-            <div class="form-floating text-dark">
-              <input
-              type="number"
-              class="form-control" name="formId1" id="aporteMensal" placeholder="">
-              <label for="aporteMensal">Seu aporte mensal:</label>
+            <div class="input-group box-form mt-3">  
+              <span class="input-group-text">R$</span>
+              <div class="form-floating text-dark">
+                <input
+                type="number"
+                class="form-control" name="formId1" id="aporteMensal" placeholder="">
+                <label for="aporteMensal">Seu aporte mensal:</label>
+              </div>
             </div>
-          </div>
 
-          <div class="input-group box-form mt-3">  
-            <span class="input-group-text percent">%</span>
-            <div class="form-floating text-dark">
-              <input 
-              type="number" 
-              class="form-control" name="formId2" id="jurosAnual" placeholder="">
-              <label for="jurosAnual">Juros anual:</label>
+            <div class="input-group box-form mt-3">  
+              <span class="input-group-text percent">%</span>
+              <div class="form-floating text-dark">
+                <input 
+                type="number" 
+                class="form-control" name="formId2" id="jurosAnual" placeholder="">
+                <label for="jurosAnual">Juros anual:</label>
+              </div>
             </div>
           </div>
+          <div id="resultado"></div>
+          <div id="alerta-calculo"></div>
+          <button 
+          class="btn btn-lg botao-calcular btn-secondary fw-bold border-black text-light" 
+          id="calcular" 
+          type="submit">
+            Calcular
+          </button>
+          <button 
+          type="submit"
+          href="index.html"
+          class=" btn btn-lg botao-reset btn-secondary fw-bold border-black ">
+          Reset
+        </button>
         </form>
       </div>
-      <div id="resultado"></div>
-      <div id="alerta-calculo"></div>
-      <button 
-      class="btn btn-lg btn-secondary fw-bold border-black text-light botao-calcular" 
-      id="calcular" 
-      type="submit">
-        Calcular
-      </button>
-      <button 
-      type="reset" 
-      class=" btn btn-lg btn-secondary fw-bold border-black text-light botao-reset">
-      Reset
-    </button>
       
 
 
 
 
     </section>  
-      <figure class="text-center">
-        <blockquote class="blockquote">
-          <p>A well-known quote, contained in a blockquote element.</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </figcaption>
-      </figure>
-    
+
+    <section>
+      <hr class="featurette-divider">
+      
+      <h1 class="col-8 fw-bold titulo-investidores">Veja o que alguns dos maiores investidores do mundo falam sobre investir!</h1>
+
+
+    <div class="row featurette">
+      <div class="conteudo-container col-md-7">
+        <h2 class="featurette-heading">Luiz Barci Filho</h2>
+        <p class="lead">"Os melhores ensinamentos que o mercado me trouxe é de não acreditar que é possível ficar rico rapidamente, ter disciplina e prioridade nas escolhas.Escolha uma prioridade e lute por ela"</p>
+      </div>
+      <div class="col-md-5">
+        <img 
+        src="/meuPrimeiroMilhao/assets/img/luizbarsi.jpg" 
+        alt="foto do Luiz Barsi - investidor"
+        class="w-100">  
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="conteudo-container col-md-7 order-md-2">
+        <h2 class="featurette-heading">Warren Buffett</h2>
+        <p class="lead">"As correntes do hábito são leves demais para serem sentidas, até se tornarem pesadas demais para serem quebradas."</p>
+        <p class="lead">"Não precisamos ser mais espertos que os outros, precisamos ser mais disciplinados que os outros"</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img 
+        src="/meuPrimeiroMilhao/assets/img/warrenbuffett.png" 
+        alt="foto do Warren Buffett - investidor"
+        class="w-100"> 
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="conteudo-container col-md-7">
+        <h2 class="featurette-heading">Thiago Nigro <span class="text-muted">Primo Rico</span></h2>
+        <p class="lead">"Sucesso é nunca ter pressa, mas sempre andar em alta velocidade. Não seja impaciente. O sucesso é um processo, e não algo imediato. Você não pode ter pressa para que as coisas aconteçam rápido, mas, isso não te impede de procurar, sempre que possível, apertar o passo." ⠀</p>
+        <br><p class="lead">"Quem planta valor, colhe resultado. Quem planta foco, colhe performance. Quem planta bons hábitos, colhe sucesso."</p>
+      
+      </div>
+      <div class="col-md-5">
+        <img 
+        src="/meuPrimeiroMilhao/assets/img/thiagonigro.jpg" 
+        alt="foto do Luiz Barsi - investidor"
+        class="w-100"> 
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    </section>
   </main>
   <footer>
     <!-- place footer here -->
