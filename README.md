@@ -39,4 +39,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Made by Danillo Boing 
+Made by Danillo Boing :wave: [Fale comigo pelo Linkedin!](https://www.linkedin.com/in/danilloboing/)
