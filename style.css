@@ -75,13 +75,21 @@ nav {
     color: #602ac4;
 }
 
+.info {
+    position: relative;
+    left: 10px;
+}
+
 .container-calculo{
     margin: 8em auto;
 }
 
 #resultado {
-    padding: 20px;
     color: beige;
+}
+
+#alerta-calculo {
+    color: #8f57f6;
 }
 
 .titulo-investidores {
@@ -128,6 +136,21 @@ nav {
 }
 
 
+.botaoVoltar {
+    text-decoration: none;
+    background-color: #602ac4;
+    font-family: Inter;
+    margin-bottom: 30px;
+
+
+}
+
+.botaoVoltar a {
+    color: beige;
+    text-decoration: none;
+}
+
+
 @media screen and (max-width: 500px) {
     .lead {
         font-size: 15px;
@@ -135,4 +158,5 @@ nav {
     .logos-footer {
         width: 30px;
     }
+    
 }

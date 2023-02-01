@@ -26,6 +26,32 @@ botaoCalcular.addEventListener("click", function(event) {
         console.log (valorInicial)
 
         document.getElementById("resultado").innerHTML = "Considerando seu aporte mensal e juros anual, você alcançará seu primeiro milhão em aproximadamente " + months + " meses. <br>Ou " + (months/12).toFixed(1) + " anos."
-        document.getElementById("alerta-calculo").innerHTML = ""
+        document.getElementById("alerta-calculo").innerHTML = "🛈 Este cálculo desconsidera a inflação."
 
       })
+
+      /* BOTÃO PARA VOLTAR AO INÍCIO */
+$(document).ready (function(){
+  var divBotao=$('.botaoVoltar');
+  var linkBotao=$('.botaoVoltar-Link');
+
+  /* Mostrar botão*/
+
+  $(window).scroll(function(){
+      if($(this).scrollTop()>70){
+          divBotao.fadeIn();
+      }else{
+         divBotao.fadeOut(); 
+      }
+
+  });
+
+  /* Clicar e voltar ao topo*/
+
+  divBotao.click(function(){
+
+      $('html,body').animate({scrollTop:0},800);
+
+      return false;
+  });
+});
