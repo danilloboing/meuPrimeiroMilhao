@@ -103,8 +103,36 @@ nav {
     font-family: inter;
 }
 
+.contato {
+    text-align: center;
+    font-family: inter;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-list:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.logos-footer {
+    border-radius: 8px;
+}
+
+.copyright {
+    font-size: small;
+    font-family: monospace;
+}
+
+
 @media screen and (max-width: 500px) {
     .lead {
         font-size: 15px;
+    }
+    .logos-footer {
+        width: 30px;
     }
 }
